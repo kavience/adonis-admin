@@ -1,1 +1,1 @@
-# Adonis Admin
+# adonis-admin

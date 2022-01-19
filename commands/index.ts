@@ -7,4 +7,7 @@
  * file that was distributed with this source code.
  */
 
-export default [];
+export default [
+  'adonis-admin/build/commands/AdminInstall',
+  'adonis-admin/build/commands/AdminUnInstall',
+]

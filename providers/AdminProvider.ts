@@ -7,16 +7,26 @@
  * file that was distributed with this source code.
  */
 
-import { ApplicationContract } from "@ioc:Adonis/Core/Application";
+import { ApplicationContract } from '@ioc:Adonis/Core/Application'
 
 /**
  * Provider to register lucid filter with the IoC container
  */
 export default class AdminProvider {
-  public static needsApplication = true;
+  public static needsApplication = true
   constructor(protected app: ApplicationContract) {}
 
-  public register(): void {}
+  /**
+   * Register the binding
+   */
+  public register() {
+    console.log('register')
+  }
 
-  public boot(): void {}
+  /**
+   * Stick an instance to the current HTTP request
+   */
+  public boot() {
+    console.log('boot')
+  }
 }
